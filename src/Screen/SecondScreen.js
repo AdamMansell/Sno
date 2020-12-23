@@ -9,11 +9,11 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-function SecondScreen(){
+function SecondScreen({navigation}){
   return (
   <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
     <View style={{flex:1, flexDirection:'row'}}>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Third')}}>
         <Text style={{textAlign:'center', fontSize:40}}>Meadows</Text>
       </TouchableOpacity>
     </View>

@@ -14,28 +14,28 @@ import {
 
 const screenWidth = Dimensions.get('window').width;
 const screenHeight = Dimensions.get('window').height;
-function HomeScreen({navigation}){
+function HomeScreen({ navigation }) {
   return (
-  <View style={{flex:1,}}>
-    <TouchableOpacity style={{paddingVertical:20, width:'50%'}}
-       onPress={()=>{
-        navigation.navigate('Second');
-      }}
-    >
-      <Image 
-        style={{width:screenWidth / 2, height: screenWidth/2}} 
-        source={require('../assets/images/Mt.Hood.jpg')}
-      />
-      <Text style={{fontSize:20, textAlign:'center',}}>Mt.Hood</Text>
-    </TouchableOpacity>
-  </View>
+    <View style={{ flex: 1, backgroundColor: 'grey' }}>
+      <TouchableOpacity style={{ padding: 20, width: '50%' }}
+        onPress={() => {
+          navigation.navigate('Second');
+        }}
+      >
+        <Image
+          style={{ width: screenWidth / 2, height: screenWidth / 2 }}
+          source={require('../assets/images/Mt.Hood.jpg')}
+        />
+        <Text style={{ fontSize: 25, textAlign: 'center', color: 'white', paddingLeft: 45 }}>Mt.Hood</Text>
+      </TouchableOpacity>
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
 
-  titleText : {
-    color : '#00FFFF',
+  titleText: {
+    color: '#00FFFF',
   },
   footer: {
     fontSize: 12,

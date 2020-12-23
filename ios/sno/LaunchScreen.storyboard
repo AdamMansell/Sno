@@ -16,23 +16,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
-                                <rect key="frame" x="0.0" y="647" width="375" height="0.0"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="0.0" y="647" width="376" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfQ-yl-Ytx">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfQ-yl-Ytx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="2qZ-dd-D6x"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="8Fn-aY-QI5"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="8zi-MB-ypI"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="Efn-Wb-vaH"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="Gjo-Ct-2cC"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="O7m-co-IyH"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="bottom" id="OMb-Ua-Ks0"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="bottom" secondItem="Bcu-3y-fUS" secondAttribute="bottom" id="RZ4-KX-lGC"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
                             <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cRi-S1-0nH"/>
+                            <constraint firstAttribute="bottom" secondItem="kfQ-yl-Ytx" secondAttribute="bottom" id="hyU-X0-6DR"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="w1n-T7-077"/>
+                            <constraint firstItem="kfQ-yl-Ytx" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" id="zRr-F7-Qk4"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,6 +53,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splash" width="414" height="896"/>
+        <image name="splash" width="414" height="768"/>
     </resources>
 </document>

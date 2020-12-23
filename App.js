@@ -22,6 +22,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import HomeScreen from './src/Screen/HomeScreen';
 import SecondScreen from './src/Screen/SecondScreen';
+import ThirdScreen from './src/Screen/ThirdScreen';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} options={{title : 'Mountains'}}/>
         <Stack.Screen name="Second" component={SecondScreen} options={{title : 'Mt.Hood'}} />
+        <Stack.Screen name="Third" component={ThirdScreen} options={{title : 'Meadows Resort'}} />
       </Stack.Navigator>
     </NavigationContainer>
   );
